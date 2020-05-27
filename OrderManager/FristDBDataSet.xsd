@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FristDBDataSet" targetNamespace="http://tempuri.org/FristDBDataSet.xsd" xmlns:mstns="http://tempuri.org/FristDBDataSet.xsd" xmlns="http://tempuri.org/FristDBDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="FristDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="FristDBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.OrderManager.Properties.Settings.GlobalReference.Default.FristDBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="TB_PRODUCT_INFOTableAdapter" GeneratorDataComponentClassName="TB_PRODUCT_INFOTableAdapter" Name="TB_PRODUCT_INFO" UserDataComponentName="TB_PRODUCT_INFOTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="FristDBConnectionString (Settings)" DbObjectName="FristDB.dbo.TB_PRODUCT_INFO" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT CATEGORY_ID FROM dbo.TB_PRODUCT_INFO</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="CATEGORY_ID" DataSetColumn="CATEGORY_ID" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FristDBDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FristDBDataSet" msprop:Generator_UserDSName="FristDBDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="TB_PRODUCT_INFO" msprop:Generator_TableClassName="TB_PRODUCT_INFODataTable" msprop:Generator_TableVarName="tableTB_PRODUCT_INFO" msprop:Generator_TablePropName="TB_PRODUCT_INFO" msprop:Generator_RowDeletingName="TB_PRODUCT_INFORowDeleting" msprop:Generator_RowChangingName="TB_PRODUCT_INFORowChanging" msprop:Generator_RowEvHandlerName="TB_PRODUCT_INFORowChangeEventHandler" msprop:Generator_RowDeletedName="TB_PRODUCT_INFORowDeleted" msprop:Generator_UserTableName="TB_PRODUCT_INFO" msprop:Generator_RowChangedName="TB_PRODUCT_INFORowChanged" msprop:Generator_RowEvArgName="TB_PRODUCT_INFORowChangeEvent" msprop:Generator_RowClassName="TB_PRODUCT_INFORow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CATEGORY_ID" msprop:Generator_ColumnVarNameInTable="columnCATEGORY_ID" msprop:Generator_ColumnPropNameInRow="CATEGORY_ID" msprop:Generator_ColumnPropNameInTable="CATEGORY_IDColumn" msprop:Generator_UserColumnName="CATEGORY_ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
