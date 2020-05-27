@@ -159,6 +159,8 @@ namespace OrderManager.ContentPanel
 
         private void BTNdelete_Click_1(object sender, EventArgs e)
         {
+            //delete process
+
             for (int rowIndex = DGVproduct.RowCount - 1; rowIndex >= 0; rowIndex--)
             {
                 var selected = DGVproduct.Rows[rowIndex].Cells["SELECTED"].Value;

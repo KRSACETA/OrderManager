@@ -18,6 +18,7 @@ namespace OrderManager
         {
             //something
             //another line
+            //yet another line
             InitializeComponent();
         }
         private bool isShowMenu;
