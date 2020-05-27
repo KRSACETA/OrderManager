@@ -16,6 +16,7 @@ namespace OrderManager
     {
         public BaseForm()
         {
+            //something
             InitializeComponent();
         }
         private bool isShowMenu;
